@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>EvilEye_StoneSkipgates</defName>
+    <label>stone skipgates</label>
+    <description>Carve stone rings that tap into the local skipfield, letting people step from one gate to another on the same map.</description>
+    <baseCost>1200</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>Stonecutting</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.40</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="SkipdoorBuildingBase">
+    <defName>EvilEye_StoneSkipgate</defName>
+    <label>stone skipgate</label>
+    <description>A carved stone ring bound to the local skipfield. It needs no power, but it takes a moment to open before someone can step through to another skipgate.</description>
+    <size>(1,1)</size>
+    <graphicData>
+      <texPath>Things/Building/Misc/EvilEye_StoneSkipgate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.1,1.1)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Misc/EvilEye_StoneSkipgate</uiIconPath>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+    <designationCategory>Misc</designationCategory>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Flickable" />
+      <li Class="MigCorp.Skiptech.SkipNet.Comps.CompProperties_Skipdoor_Delayed">
+        <delayTicks>90</delayTicks>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>EvilEye_StoneSkipgates</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>EvilEyeGuy.SkiptechPathing</packageId>
+  <name>Skiptech Pathing</name>
+  <author>EvilEyeGuy</author>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>migcorp.skiptech</packageId>
+      <displayName>MigCorp - Skiptech</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3626074566</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>migcorp.skiptech</li>
+  </loadAfter>
+  <description>Local add-on for MigCorp - Skiptech. Skipdoor selection uses per-door distance fields, built in the background, instead of a region search and two trial path requests for every long trip. Leg paths are only requested when the estimated route through the doors beats the direct walk.
+
+Adds a stone skipgate: built from any stone, no power, short opening delay. Research: stone skipgates (medieval, after stonecutting).</description>
+</ModMetaData>
